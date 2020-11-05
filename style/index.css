@@ -124,8 +124,8 @@ header p {
 
 /* Projects */
 
-.projects h2 {
-    
+.projects {
+    margin-bottom: 4em;
 }
 
 .section_grid {
@@ -166,3 +166,18 @@ header p {
     letter-spacing: 1px;
 }
 
+/* Contact Section */
+
+#contact_section {  
+    margin-bottom: 3em; 
+}
+
+#contact_section input {
+    padding: .5em;
+    color: #fff;
+    background-color: #333;
+}
+
+.input-field > placeholder{
+    color: #fff;
+}
