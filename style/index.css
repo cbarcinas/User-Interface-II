@@ -1,7 +1,168 @@
-/* Add CSS styling here */
-
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #333;
+    font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+    max-width: calc(960px + 2rem);
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 2.3em;
+    margin-bottom: 1.5em;
+    color: #fff;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: .3em;
+}
+
+/* Header Section */
+
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: .2em;
+    margin-top: 3em;
+    letter-spacing: .4px;
+}
+
+header ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+header li {
+    padding: 0 1em 0 0;
+}
+
+header a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #fff;
+    min-height: 23px;
+    padding: .1em;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: .2em;
+    margin-bottom: .4em;
+    letter-spacing: .4px;
+}
+
+.bold-yellow {
+    color: rgb(240, 188, 136);
+    font-weight: 600;
+}
+
+/* Sweep to right animation on header list items (a tag) */
+
+.hover-sweep-right {
+    display: inline-flex;
+    transform: translateZ(0);
+    transition-duration: 0.2s;
+}
+
+.hover-sweep-right:before {
+    content: " ";
+    position: absolute;
+    z-index: -1; /* needed to push psuedo back so that we can see text color is black above animation*/
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(240, 188, 136);
+    border-radius: .3em;
+    padding: .4em;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease-out;
+}
+
+.hover-sweep-right:hover:before, 
+.hover-sweep-right:focus:before, 
+.hover-sweep-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.hover-sweep-right:hover,
+.hover-sweep-right:focus, 
+.hover-sweep-right:active {
+    color: black;
+}
+
+/* About Section */
+
+.about-text {
+    color: rgb(240, 188, 136);
+    font-size: 1.2rem;
+    letter-spacing: .1em;
+    line-height: 1.5em;
+    /* border-left: .1em solid rgb(240, 188, 136);
+    padding-left: 1em; */
+    margin-bottom: 4em;
+}
+
+/* hr {
+    margin-top: 3em;
+} */
+
+
+/* Projects */
+
+.projects h2 {
+    
+}
+
+.section_grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-gap: 1em;
+}
+
+.section_grid_anchor {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.section_grid_image-wrapper {
+    overflow: hidden;
+}
+
+.section_grid_image {
+    display: block;
+    opacity: 1;
+    width: 100%;
+}
+
+.section_grid_item {
+    padding: 0;
+}
+
+.section_grid_item-title {
+    color: rgb(240, 188, 136);
+    display: inline-block;
+    /* margin-left: .2em; */
+    /* position: relative; */
+    /* vertical-align: top; */
+    overflow: hidden;
+    margin: 1em 0 0 .2em;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
