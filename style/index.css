@@ -243,11 +243,9 @@ header p {
     
 }
 
-@keyframes sumLight {
-
-}
 
 /*======= Media Queries ======*/
+
 @media (max-width: 770px) {
     body, html {
         font-size: 92%;
